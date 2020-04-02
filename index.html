@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Temperature Converter</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="main.js"></script>
+        <script defer src="https://kit.fontawesome.com/9f767eca8f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-dialog">
+                <div class="header">
+                    <i id="logo" class="fab fa-js"></i>
+                    <div class="header-text">
+                        <h1>JS Temperature Converter</h1>
+                        <h3>Date started: <date>April 2, 2020</date></h3>
+                        <h3>Date ended: <date>NA</date></h3>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="choose-temperature">
+                        <form class="form-temperature" method="POST">
+                            <label for="choose">Choose temperature: </label>
+                            <select name="choose" id="chooseTemperature">
+                                <option value="celsius">Celsius</option>
+                                <option value="fahrenheit">Fahrenheit</option>
+                                <option value="kelvin">Kelvin</option>
+                                <input id="btn-choose" type="submit" value="Enter">
+                            </select>
+                        </form>
+                    </div>
+                    <div class="enter-celsius">
+                        <form action="#" class="form-temperature" method="POST">
+                            <label for="celsius">Enter temperature in Celsius: </label>
+                            <input type="number" placeholder="In Celsius" required>
+                            <input type="submit" value="Convert">
+                        </form>
+                    </div>
+                    <div class="enter-fahrenheit">
+                        <form action="#" class="form-temperature" method="POST">
+                            <label for="fahrenheit">Enter temperature in Fahrenheit: </label>
+                            <input type="number" placeholder="In Fahrenheit" required>
+                            <input type="submit" value="Convert">
+                        </form>
+                    </div>
+                    <div class="enter-kelvin">
+                        <form action="#" class="form-temperature" method="POST">
+                            <label for="fahrenheit">Enter temperature in Kelvin: </label>
+                            <input type="number" placeholder="In Kelvin" required>
+                            <input type="submit" value="Convert">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Photo by Chris Ried on Unsplash</p>
+        </footer>
+    </body>
+</html>

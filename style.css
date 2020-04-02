@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*Background image*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('images/coding.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h3 {
+    font-size: 16px;
+    color: gray;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+input {
+    width: 100px;
+    height: 20px;
+    margin: 5px;
+}
+
+/*Logo*/
+#logo {
+    margin-right: 20px;
+    font-size: 90px;
+    color: 	rgb(204,204,0);
+}
+
+.container {
+    width: 700px;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 15px 13px 5px 0px rgba(71, 71, 71, 0.75); 
+    margin: 10% auto;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+}
+
+.header-text {
+    margin-top: 5px;
+}
+
+/*Forms*/
+.choose-temperature {
+    margin-top: 10px;
+}
+
+#chooseTemperature {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 3px solid gray;
+}
+
+.enter-celsius, 
+.enter-fahrenheit,
+.enter-kelvin {
+    display: none;
+}
