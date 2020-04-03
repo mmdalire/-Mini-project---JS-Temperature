@@ -10,49 +10,65 @@
     </head>
     <body>
         <div class="container">
-            <div class="input-dialog">
-                <div class="header">
-                    <i id="logo" class="fab fa-js"></i>
-                    <div class="header-text">
-                        <h1>JS Temperature Converter</h1>
-                        <h3>Date started: <date>April 2, 2020</date></h3>
-                        <h3>Date ended: <date>NA</date></h3>
-                    </div>
+            <div class="container__header">
+                <i id="logo" class="fab fa-js"></i>
+                <div class="container__title">
+                    <h1>JS Temperature Converter</h1>
+                    <h3>Date started: <date>April 2, 2020</date></h3>
+                    <h3>Date ended: <date>NA</date></h3>
                 </div>
-                <div class="main">
-                    <div class="choose-temperature">
-                        <form class="form-temperature" method="POST">
-                            <label for="choose">Choose temperature: </label>
-                            <select name="choose" id="chooseTemperature">
-                                <option value="celsius">Celsius</option>
-                                <option value="fahrenheit">Fahrenheit</option>
-                                <option value="kelvin">Kelvin</option>
-                                <input id="btn-choose" type="submit" value="Enter">
-                            </select>
-                        </form>
-                    </div>
-                    <div class="enter-celsius">
-                        <form action="#" class="form-temperature" method="POST">
-                            <label for="celsius">Enter temperature in Celsius: </label>
-                            <input type="number" placeholder="In Celsius" required>
-                            <input type="submit" value="Convert">
-                        </form>
-                    </div>
-                    <div class="enter-fahrenheit">
-                        <form action="#" class="form-temperature" method="POST">
-                            <label for="fahrenheit">Enter temperature in Fahrenheit: </label>
-                            <input type="number" placeholder="In Fahrenheit" required>
-                            <input type="submit" value="Convert">
-                        </form>
-                    </div>
-                    <div class="enter-kelvin">
-                        <form action="#" class="form-temperature" method="POST">
-                            <label for="fahrenheit">Enter temperature in Kelvin: </label>
-                            <input type="number" placeholder="In Kelvin" required>
-                            <input type="submit" value="Convert">
-                        </form>
-                    </div>
-                </div>
+            </div>
+            <div class="container__choose-temperature">
+                <form action="#" class="choose-temperature__form" method="POST">
+                    <label for="choose-temperature__select">Choose temperature</label>
+                    <select name="choose-temperature__select" class="choose-temperature__select">
+                        <option value="">----</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <input type="submit" id="js-change-scale" value="Enter">
+                </form>
+            </div>
+            <div class="container__input-celsius">
+                <hr>
+                <p>Enter temperature and click 'Convert' to show its converted temperature in all scales. </p> 
+                <hr>
+                <form action="#" class="input-celsius__form">
+                    <label for="input-celsius__input">Enter Celsius</label>
+                    <input type="number" id="enter-celsius" required>
+                    <input type="submit" class="input-temperature__submit-celsius" value="Convert">
+                </form>
+            </div>
+            <div class="container__input-fahrenheit">
+                <hr>
+                <p> Enter temperature and click 'Convert' to show its converted temperature in all scales. </p>
+                <hr> 
+                <form action="#" class="input-fahrenheit_form">
+                    <label for="input-celsius__input">Enter Fahrenheit</label>
+                    <input type="number" id="enter-fahrenheit" required>
+                    <input type="submit" class="input-temperature__submit-fahrenheit" value="Convert">
+                </form>
+            </div>
+            <div class="container__input-kelvin">
+                <hr>
+                <p> Enter temperature and click 'Convert' to show its converted temperature in all scales. </p>
+                <hr>  
+                <form action="#" class="input-kelvin__form">
+                    <label for="input-celsius__input">Enter Kelvin</label>
+                    <input type="number" id="enter-kelvin" required>
+                    <input type="submit" class="input-temperature__submit-kelvin" value="Convert">
+                </form>
+            </div>
+            <div class="container__converted-temperature">
+                <hr>
+                Converted temperature <br>
+                <label for="celsius">Celsius</label>
+                <input type="number" id="celsius" readonly>
+                <label for="celsius">Fahrenheit</label>
+                <input type="number" id="fahrenheit" readonly>
+                <label for="celsius">Kelvin</label>
+                <input type="number" id="kelvin" readonly>
             </div>
         </div>
         <footer>

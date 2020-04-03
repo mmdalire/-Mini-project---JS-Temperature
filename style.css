@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-/*Background image*/
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+/*Background image*/
+/*----*/
 body {
     background: url('images/coding.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-y: hidden;
 }
 
 h3 {
@@ -20,15 +22,26 @@ h3 {
     color: gray;
 }
 
-label {
-    display: inline-block;
-    width: 300px;
+p {
+    margin: 10px auto;
 }
 
-input {
-    width: 100px;
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+input[type="number"] {
+    width: 180px;
     height: 20px;
     margin: 5px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    background-color: transparent;
+    margin-left: 20px;
+    height: 25px;
 }
 
 /*Logo*/
@@ -46,30 +59,45 @@ input {
     padding: 10px;
 }
 
-.header {
+/*Header part*/
+.container__header {
     display: flex;
 }
 
-.header-text {
+.container__title {
     margin-top: 5px;
 }
 
-/*Forms*/
-.choose-temperature {
-    margin-top: 10px;
+/*Choose temperature part*/
+.container__choose-temperature {
+    font-weight: bold;
+    height: 40px;
 }
 
-#chooseTemperature {
+.choose-temperature__form {
+    width: 440px;
+    margin: 5px auto;
+}
+
+.choose-temperature__select {
+    width: 110px;
     font-size: 14px;
-    margin-left: 10px;
-    width: 100px;
-    background-color: transparent;
-    border: 2px solid transparent;
-    border-bottom: 3px solid gray;
 }
 
-.enter-celsius, 
-.enter-fahrenheit,
-.enter-kelvin {
+/*Input temperature*/
+.container__input-celsius,
+.container__input-fahrenheit, 
+.container__input-kelvin {
     display: none;
+    width: 80%;
+    margin: 2px auto;
+    font-weight: bold;
+}
+
+/*Display converted temperature*/
+.container__converted-temperature {
+    display: none;
+    width: 80%;
+    font-weight: bold;
+    margin: 5px auto;
 }
